@@ -1,0 +1,5 @@
+{
+  "name": "Remix: Metro Price Finder",
+  "description": "A streamlined tool to find phone prices for Metro by T-Mobile plans with ID verification.",
+  "requestFramePermissions": []
+}
