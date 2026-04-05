@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { PHONES, PhonePrice } from './data';
 
 type PlanType = 'newNumberWId' | 'portWId';
-type PlanPrice = '$40' | '$50' | '$60';
+type PlanPrice = '$40' | '$50' | '$60' | '$65';
 type SortOption = 'price' | 'name';
 
 export default function App() {
@@ -111,8 +111,8 @@ export default function App() {
             <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4 flex items-center gap-2">
               <Info className="w-4 h-4" /> 2. Plan Price
             </h2>
-            <div className="grid grid-cols-3 gap-2">
-              {(['$40', '$50', '$60'] as PlanPrice[]).map((price) => (
+            <div className="grid grid-cols-4 gap-2">
+              {(['$40', '$50', '$60', '$65'] as PlanPrice[]).map((price) => (
                 <button
                   key={price}
                   onClick={() => setPlanPrice(price)}
@@ -253,7 +253,7 @@ export default function App() {
       <footer className="bg-white border-t border-slate-200 py-8 mt-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-sm text-slate-500 mb-2">
-            Prices based on Metro Price Grid 3.19.26. ID verification required for all listed plans.
+            Prices based on Metro Price Grid 4.05.26. ID verification required for all listed plans.
           </p>
           <div className="flex items-center justify-center gap-4 text-xs text-slate-400">
             <span className="flex items-center gap-1"><CheckCircle2 className="w-3 h-3 text-green-500" /> ID Verified</span>
