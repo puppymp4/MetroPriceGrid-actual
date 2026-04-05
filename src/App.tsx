@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { PHONES, PhonePrice } from './data';
 
 type PlanType = 'newNumberWId' | 'portWId';
-type PlanPrice = '$40' | '$50' | '$60' | '$65';
+type PlanPrice = '$40' | '$55' | '$65';
 type SortOption = 'price' | 'name';
 
 export default function App() {
@@ -111,8 +111,8 @@ export default function App() {
             <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4 flex items-center gap-2">
               <Info className="w-4 h-4" /> 2. Plan Price
             </h2>
-            <div className="grid grid-cols-4 gap-2">
-              {(['$40', '$50', '$60', '$65'] as PlanPrice[]).map((price) => (
+            <div className="grid grid-cols-3 gap-2">
+              {(['$40', '$55', '$65'] as PlanPrice[]).map((price) => (
                 <button
                   key={price}
                   onClick={() => setPlanPrice(price)}
